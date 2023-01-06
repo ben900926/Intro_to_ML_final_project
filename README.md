@@ -23,9 +23,9 @@ To reproduce my submission, follow the steps below:
 
 1. Run 109550146_Final_train.ipynb (You can skip this if you use the model I provided above)
 2. Run 109550146_Final_inference.ipynb
-3. Following "SUBMISSION_PATH" to download my **submission.csv** file. By default, it can be found here:
+3. Following "SUBMISSION_PATH" to download my **109550146_submission.csv** file. By default, it can be found here:
 4. Submit it to Kaggle
-![image](https://user-images.githubusercontent.com/71249897/211024073-c54c2a16-1eae-4f9a-bd55-5afb16e77183.png)
+![image](https://user-images.githubusercontent.com/71249897/211044969-2a4fe7a4-742b-4f5b-b136-745f36ca603e.png)
 
 
 ## Training
@@ -55,9 +55,9 @@ To evaluate my model, run 109550146_Final_inference.ipynb in Google Colab. All c
 By default, my model weight is automatically downloaded to Google Colab in the first cell, 
 so you don't have to change anything if you want to use the model I provided.
 
-Also, the submission file is stored in SUBMISSION_PATH, so by default you should see **"submission.csv"** by clicking this button in left.
+Also, the submission file is stored in SUBMISSION_PATH, so by default you should see **"109550146_submission.csv"** by clicking this button in left.
 
-![image](https://user-images.githubusercontent.com/71249897/211024073-c54c2a16-1eae-4f9a-bd55-5afb16e77183.png)
+![image](https://user-images.githubusercontent.com/71249897/211044988-6a440380-ff8e-4477-aea6-9a9af102551b.png)
 
 You can change the path if you want to store it in your drive.
 
