@@ -18,6 +18,9 @@ You can download pretrained models here:
 
 ## Reproducing Submission
 To reproduce my submission, follow the steps below:
+
+*Note: Please download my ipynb code and open it on Google Colab. **Don't open it directly in Github.***
+
 1. Run 109550146_Final_train.ipynb (You can skip this if you use the model I provided above)
 2. Run 109550146_Final_inference.ipynb
 3. Following "SUBMISSION_PATH" to download my **submission.csv** file. By default, it can be found here:
