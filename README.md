@@ -10,11 +10,19 @@ To install requirements, please run my ipynb file in google colab and execute th
 
 >📋  Please use the latest version of Google Colab and run the first cell
 
-## Pre-trained Models
+## Link to My Model
 
 You can download pretrained models here:
 
 - [My logistic regression model](https://drive.google.com/file/d/1-5d3PfMkJr7ln3xu5xQbZQsqlqqInJbq/view?usp=share_link) trained using parameter search.
+
+## Reproducing Submission
+To reproduce my submission, follow the steps below:
+1. Run 109550146_Final_train.ipynb (You can skip this if you use the model I provided above)
+2. Run 109550146_Final_inference.ipynb
+3. Following "SUBMISSION_PATH" to download my **submission.csv** file. By default, it can be found here:
+4. Submit it to Kaggle
+![image](https://user-images.githubusercontent.com/71249897/211024073-c54c2a16-1eae-4f9a-bd55-5afb16e77183.png)
 
 
 ## Training
