@@ -4,9 +4,63 @@ This repository is the official implementation of 2022 NYCU intro to ML final pr
 
 ## Requirements
 
-To install requirements, please run my ipynb file in google colab and execute the first cell
+Note: Please use Python **3.8.15** version
 
-![image](https://user-images.githubusercontent.com/71249897/211018651-03f2397f-7798-43bb-9733-2583d8889ce2.png)
+To install requirements, please run my ipynb file in either:
+ - **local (vscode)**:  Run the commands below in the first cell
+ 
+ 109550146_Final_train.ipynb
+ 
+ ````
+ # download dependancy
+%pip install -r requirements.txt
+# download train, test data from my drive
+# train.csv https://drive.google.com/file/d/1GDmfpyUQJSR30OQGop1OfEPEos9sndrl/view?usp=sharing
+!gdown 1GDmfpyUQJSR30OQGop1OfEPEos9sndrl 
+# test.csv https://drive.google.com/file/d/1JBxfTEXZCGWfmKFQWUlEcwlBYVnIRcUh/view?usp=sharing
+!gdown 1JBxfTEXZCGWfmKFQWUlEcwlBYVnIRcUh
+ ````
+ 
+ 109550146_Final_inference.ipynb
+ 
+ ````
+ # download dependancy
+%pip install -r requirements.txt
+
+# download input data from my drive
+# train.csv https://drive.google.com/file/d/1GDmfpyUQJSR30OQGop1OfEPEos9sndrl/view?usp=sharing
+!gdown "1GDmfpyUQJSR30OQGop1OfEPEos9sndrl" 
+# test.csv https://drive.google.com/file/d/1JBxfTEXZCGWfmKFQWUlEcwlBYVnIRcUh/view?usp=sharing
+!gdown "1JBxfTEXZCGWfmKFQWUlEcwlBYVnIRcUh" 
+# download the MODEL WEIGHT from my drive 
+# link: https://drive.google.com/file/d/1-5d3PfMkJr7ln3xu5xQbZQsqlqqInJbq/view?usp=sharing
+!gdown "1-5d3PfMkJr7ln3xu5xQbZQsqlqqInJbq" 
+# sample submission.csv
+# dont_click_me.csv https://drive.google.com/file/d/1-5xIIYDvwWfR0JSWqd5LNFX7K_mWLldN/view?usp=sharing
+!gdown "1-5xIIYDvwWfR0JSWqd5LNFX7K_mWLldN" 
+
+# download encoder needed for preprocessing
+!pip install category_encoders
+ ````
+ 
+After executing, you should see the following files (dont_click_me.csv, final_mdoel.pkl, test.csv, train.csv) show up on the left panel:
+
+![image](https://user-images.githubusercontent.com/71249897/211157859-c5fd9aa7-a382-4ccc-b151-6212182acf13.png)
+
+ 
+ - **google colab**: modify the first cell to the following
+
+````
+# download dependancy
+!pip install optuna
+!pip install category_encoders
+
+# download train, test data from my drive
+# train.csv https://drive.google.com/file/d/1GDmfpyUQJSR30OQGop1OfEPEos9sndrl/view?usp=sharing
+!gdown "1GDmfpyUQJSR30OQGop1OfEPEos9sndrl" 
+# test.csv https://drive.google.com/file/d/1JBxfTEXZCGWfmKFQWUlEcwlBYVnIRcUh/view?usp=sharing
+!gdown "1JBxfTEXZCGWfmKFQWUlEcwlBYVnIRcUh" 
+````
 
 >📋  Please use the latest version of Google Colab and run the first cell
 
@@ -19,11 +73,11 @@ You can download pretrained models here:
 ## Reproducing Submission
 To reproduce my submission, follow the steps below:
 
-*Note: Please download my ipynb code and open it on Google Colab. **Don't open it directly in Github.***
+*Note: Please download my ipynb code and open it on VScode or Google Colab. **Don't open it directly in Github.***
 
 1. Run 109550146_Final_train.ipynb (You can skip this if you use the model I provided above)
 2. Run 109550146_Final_inference.ipynb
-3. Following "SUBMISSION_PATH" to download my **109550146_submission.csv** file. By default, it can be found here:
+3. Following "SUBMISSION_PATH" to download my **109550146_submission.csv** file. By default, it can be found in the same directory as my ipynb file:
 4. Submit it to Kaggle
 ![image](https://user-images.githubusercontent.com/71249897/211044969-2a4fe7a4-742b-4f5b-b136-745f36ca603e.png)
 
