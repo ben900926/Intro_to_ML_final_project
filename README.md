@@ -7,62 +7,35 @@ This repository is the official implementation of 2022 NYCU intro to ML final pr
 Note: Please use Python **3.8.15** version
 
 To install requirements, please run my ipynb file in either:
+
+ - **google colab**: modify the first cell to the following (**recommended**)
+
+````
+# download dependancy
+!pip install optuna
+!pip install category_encoders
+````
+
+>📋  Please use the latest version of Google Colab and run the first cell
+
+
  - **local (vscode)**:  Run the commands below in the first cell
  
- 109550146_Final_train.ipynb
+ > *Note:* If you use Anaconda enviornment to run, make sure you install "ipykernel" by executing the following command:
+ > ```
+ > conda install -n <your env name> ipykernel --update-deps --force-reinstall
+ > ```
+ 
+ 109550146_Final_train.ipynb and 109550146_Final_inference.ipynb
  
  ````
- # download dependancy
 %pip install -r requirements.txt
-# download train, test data from my drive
-# train.csv https://drive.google.com/file/d/1GDmfpyUQJSR30OQGop1OfEPEos9sndrl/view?usp=sharing
-!gdown 1GDmfpyUQJSR30OQGop1OfEPEos9sndrl 
-# test.csv https://drive.google.com/file/d/1JBxfTEXZCGWfmKFQWUlEcwlBYVnIRcUh/view?usp=sharing
-!gdown 1JBxfTEXZCGWfmKFQWUlEcwlBYVnIRcUh
- ````
- 
- 109550146_Final_inference.ipynb
- 
- ````
- # download dependancy
-%pip install -r requirements.txt
-
-# download input data from my drive
-# train.csv https://drive.google.com/file/d/1GDmfpyUQJSR30OQGop1OfEPEos9sndrl/view?usp=sharing
-!gdown "1GDmfpyUQJSR30OQGop1OfEPEos9sndrl" 
-# test.csv https://drive.google.com/file/d/1JBxfTEXZCGWfmKFQWUlEcwlBYVnIRcUh/view?usp=sharing
-!gdown "1JBxfTEXZCGWfmKFQWUlEcwlBYVnIRcUh" 
-# download the MODEL WEIGHT from my drive 
-# link: https://drive.google.com/file/d/1-5d3PfMkJr7ln3xu5xQbZQsqlqqInJbq/view?usp=sharing
-!gdown "1-5d3PfMkJr7ln3xu5xQbZQsqlqqInJbq" 
-# sample submission.csv
-# dont_click_me.csv https://drive.google.com/file/d/1-5xIIYDvwWfR0JSWqd5LNFX7K_mWLldN/view?usp=sharing
-!gdown "1-5xIIYDvwWfR0JSWqd5LNFX7K_mWLldN" 
-
-# download encoder needed for preprocessing
-!pip install category_encoders
  ````
  
 After executing, you should see the following files (dont_click_me.csv, final_mdoel.pkl, test.csv, train.csv) show up on the left panel:
 
 ![image](https://user-images.githubusercontent.com/71249897/211157859-c5fd9aa7-a382-4ccc-b151-6212182acf13.png)
 
- 
- - **google colab**: modify the first cell to the following
-
-````
-# download dependancy
-!pip install optuna
-!pip install category_encoders
-
-# download train, test data from my drive
-# train.csv https://drive.google.com/file/d/1GDmfpyUQJSR30OQGop1OfEPEos9sndrl/view?usp=sharing
-!gdown "1GDmfpyUQJSR30OQGop1OfEPEos9sndrl" 
-# test.csv https://drive.google.com/file/d/1JBxfTEXZCGWfmKFQWUlEcwlBYVnIRcUh/view?usp=sharing
-!gdown "1JBxfTEXZCGWfmKFQWUlEcwlBYVnIRcUh" 
-````
-
->📋  Please use the latest version of Google Colab and run the first cell
 
 ## Link to My Model
 
