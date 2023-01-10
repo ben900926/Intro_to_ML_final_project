@@ -19,6 +19,7 @@ To install requirements, please run my ipynb file in either:
 >📋  Please use the latest version of Google Colab and run the first cell
 
 
+
  - **local (vscode)**:  Run the commands below in the first cell
  
  > *Note:* If you use Anaconda enviornment to run, make sure you install "ipykernel" by executing the following command:
@@ -31,6 +32,11 @@ To install requirements, please run my ipynb file in either:
  ````
 %pip install -r requirements.txt
  ````
+ 
+ You can comment and uncomment out the part you needed in the first cell:
+ ![image](https://user-images.githubusercontent.com/71249897/211455336-85589388-1049-4c6c-b15c-70519d434874.png)
+
+ 
  
 After executing, you should see the following files (dont_click_me.csv, final_mdoel.pkl, test.csv, train.csv) show up on the left panel:
 
